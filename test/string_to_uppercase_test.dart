@@ -1,8 +1,8 @@
 
 
-import 'package:problem_solving/string_to_uppercase.dart';
-import 'package:test/scaffolding.dart';
 import 'package:test/test.dart';
+
+import 'package:problem_solving/string_to_uppercase.dart';
 
 void main() {
   group("test a func [makeUpperCase] return => input string to uppercase  ", (){
