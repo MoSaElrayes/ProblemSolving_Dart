@@ -15,21 +15,24 @@ Given a year, report if it is a leap year.
 
 class Leap {
   bool leapYear(int year) {
-    var divided4 = (year % 4) == 0;
-    var divided100 = (year % 100) == 0;
-    var divided400 = (year % 400) == 0;
+    // the best 
+  return  year % 4 == 0 && (year % 400 == 0 || year % 100 != 0);
 
-    if (divided4) {
-      if (divided100) {
-        if (divided400) {
-          return true;
-        } else {
-          return false;
-        }
-      }
-      return true;
-    } else {
-      return false;
-    }
+    // var divided4 = (year % 4) == 0;
+    // var divided100 = (year % 100) == 0;
+    // var divided400 = (year % 400) == 0;
+
+    // if (divided4) {
+    //   if (divided100) {
+    //     if (divided400) {
+    //       return true;
+    //     } else {
+    //       return false;
+    //     }
+    //   }
+    //   return true;
+    // } else {
+    //   return false;
+    // }
   }
 }
